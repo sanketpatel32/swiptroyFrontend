@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 11vh;
+  box-shadow: 1px 3px 6px 3px rgba(0, 0, 0, 0.53);
+  display: flex;
+  flex-flow: horizontal;
+  justify-content: space-between;
+  z-index: 1;
+  background-color:white;
+}
+.title {
+  font-family: "DM sans";
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 15%;
+  height: 10vh;
+  font-size: 2rem;
+  margin: 0 3rem;
+  font-weight: 600;
+  color: black;
+}
+.title:hover {
+  cursor: pointer;
+}
+.rightSide {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button {
+  margin: 0 1vw;
+  width: 10vw;
+  height: 7vh;
+  align-items: center;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "DM sans";
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  vertical-align: middle;
+}
+
+.button.pink {
+  background-color: #ff7373;
+}
+.button.lightBlue {
+  background-color: #73abff;
+}
+
+.loggedInContent {
+  display: flex;
+}
+
+.profilePic {
+  width: 3rem;
+  height: auto;
+  border-radius: 100%;
+  margin: 0 1vw;
+}
+
+.sideMenuBarIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.sideMenuBarIcon img {
+  width: 50%;
+  height: 50%;
+}
+.sideMenuBarIcon img:hover {
+  width: 52%;
+  height: 52%;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center vertically */
+  justify-content: center;
+  width: 230px;
+  height: 170px;
+  position: absolute;
+  padding: 1rem;
+  top: 10vh;
+  right: 0;
+  z-index: 1000;
+  background-color: aliceblue;
+  box-shadow: 3px 2px 8px 1px rgba(0, 0, 0, 0.75);
+}
+
+.dropdown p{
+  font-size: 1.2rem;
+  padding: 1rem;
+  font-weight: 600;
+}

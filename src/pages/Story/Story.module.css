@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+}
+.feed{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.button {
+  margin: 0 1vw;
+  width: 10vw;
+  height: 7vh;
+  align-items: center;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "DM sans";
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  vertical-align: middle;
+}
+.button.pink {
+  background-color: #ff7373;
+}
