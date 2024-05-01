@@ -5,9 +5,11 @@ import Home from './pages/MainPage/Home';
 import { Route, Routes } from "react-router-dom"
 import BookMark from './pages/BookMark/BookMark';
 import AddStories from './pages/AddStories/AddStories';
-import Story from './pages/Story/Story';
-function App() {
+// import Story from './pages/Story/Story';
+import { API_URL } from './constant';
 
+function App() {
+  
   return (
     <div >
       <NavBar />
@@ -18,6 +20,7 @@ function App() {
           <Route path='/addStory' element={<AddStories />} />
         </Routes>
       </div>
+      
 
     </div>
   )

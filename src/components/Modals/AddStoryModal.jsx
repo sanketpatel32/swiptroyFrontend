@@ -6,6 +6,7 @@ import { toast } from 'react-toastify';
 import { ModalContext } from "../../context/ModalContext";
 import SlideForm from "./AddStoryModalComponents/SlideForm";
 import { UserContext } from "../../context/userContext";
+import { API_URL } from "../../constant";
 const AddStoryModal = ({ setIsOpen }) => {
     const { setIsAddStoryModalOpen } = useContext(ModalContext);
     const { userDetails }  = useContext(UserContext);

@@ -4,7 +4,7 @@ import { RiCloseLine } from "react-icons/ri";
 import axios from "axios";
 import { toast } from 'react-toastify';
 import { UserContext } from "../../context/userContext";
-
+import { API_URL } from "../../constant";
 const RegisterModal = ({ setIsOpen }) => {
     const { userDetails, setUserDetails, isLoggedIn, setIsLoggedIn } = useContext(UserContext);
     const [warning, setWarning] = useState("");
@@ -22,7 +22,7 @@ const RegisterModal = ({ setIsOpen }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('/api/auth/register', formData)
+        axios.post(`$/api/auth/register`, formData)
             .then((res) => {
                 const { token } = res.data;
                 setUserDetails(res.data);
