@@ -88,7 +88,7 @@ const StoryModal = ({ setIsOpen, story }) => {
         } else {
             setStoryBookmarked(true);
             try {
-                axios.put(`/api/story/bookmark/${story._id}`, { userId: userDetails._id })
+                axios.put(`https://swiptroybackend-1.onrender.com/api/story/bookmark/${story._id}`, { userId: userDetails._id })
                     .then((res) => {
                         console.log("Successfully bookmark the story");
                         console.log(res);
@@ -120,7 +120,7 @@ const StoryModal = ({ setIsOpen, story }) => {
         } else {
             setStoryLiked(true);
             try {
-                await axios.put(`/api/story/like/${story._id}`, { userId: userDetails._id })
+                await axios.put(`https://swiptroybackend-1.onrender.com/api/story/like/${story._id}`, { userId: userDetails._id })
                     .then((res) => {
                         console.log("Successfully Liked the story");
                         console.log(res);

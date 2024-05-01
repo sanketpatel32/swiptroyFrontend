@@ -17,7 +17,7 @@ const StoryFeed = ({ category }) => {
                 if (showAll) {
                     setPage(10);
                 }
-                const { data } = await axios.get(`/api/story/getAll?category=${category}&page=${page}`);
+                const { data } = await axios.get(`https://swiptroybackend-1.onrender.com/api/story/getAll?category=${category}&page=${page}`);
                 setStories(data.stories);
             } catch (error) {
                 console.error("Error fetching stories:", error);

@@ -22,7 +22,7 @@ const RegisterModal = ({ setIsOpen }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post(`$/api/auth/register`, formData)
+        axios.post(`$https://swiptroybackend-1.onrender.com/api/auth/register`, formData)
             .then((res) => {
                 const { token } = res.data;
                 setUserDetails(res.data);

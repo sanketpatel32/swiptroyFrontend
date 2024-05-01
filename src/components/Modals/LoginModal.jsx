@@ -22,7 +22,7 @@ const LoginModal = ({ setIsOpen }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('/api/auth/login', formData, { withCredentials: true })
+        axios.post('https://swiptroybackend-1.onrender.com/api/auth/login', formData, { withCredentials: true })
             .then((res) => {
                 const { token } = res.data;
                 const cookieValue = document.cookie

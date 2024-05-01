@@ -124,7 +124,7 @@ const AddStoryModal = ({ setIsOpen }) => {
             }
 
             const response = await axios
-                .post(`/api/story/create`, {
+                .post(`https://swiptroybackend-1.onrender.com/api/story/create`, {
                     slides,
                     addedBy: userDetails._id,
                 })

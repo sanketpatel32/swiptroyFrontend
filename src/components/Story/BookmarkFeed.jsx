@@ -11,7 +11,7 @@ const BookmarkFeed = () => {
     useEffect(() => {
         const fetchStories = async () => {
             try {
-                const { data } = await axios.get(`/api/story/mybookmark?userId=${userDetails._id}`);
+                const { data } = await axios.get(`https://swiptroybackend-1.onrender.com/api/story/mybookmark?userId=${userDetails._id}`);
                 setStories(data.bookmarks); 
             } catch (error) {
                 console.error("Error fetching stories:", error);
